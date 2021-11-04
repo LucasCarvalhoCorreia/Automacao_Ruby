@@ -1,13 +1,13 @@
 puts 'digite um numero 1 ou 2'
-v1 = gets.to_1
+v1 = gets.to_i
 
-# if v1 == 1
-#     puts 'valor igual a 1'
-# elsif v1 == 2
-#     puts 'valor igual e 2'
-# else
-#     puts 'valor nao e igual a 1
-# end
+if v1 == 1
+    puts 'valor igual a 1'
+elsif v1 == 2
+    puts 'valor igual e 2'
+else
+    puts 'valor nao e igual a 1'
+end
 
 unless v1 == 2
     puts 'condicao falsa'
