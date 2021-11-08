@@ -1,5 +1,11 @@
-require 'capybara/cucumber'
+require 'capybara'
+require 'capybara/dsl'
+require 'capybara/rspec/matchers'
+# require 'capybara/cucumber'
 require 'selenium-webdriver'
+
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
 
 Capybara.configure do |config|
     #selenium  slenium_chrome  slenium_chrome_headless
